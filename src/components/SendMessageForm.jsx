@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class SendMessageForm extends Component {
 
@@ -35,6 +36,10 @@ class SendMessageForm extends Component {
       </form>
     )
   }
+}
+
+SendMessageForm.propTypes = {
+  disabled: PropTypes.bool.isRequired
 }
 
 export default SendMessageForm;

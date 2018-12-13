@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class NewRoomForm extends Component {
   state = {
@@ -35,6 +36,10 @@ class NewRoomForm extends Component {
       </div>
     )
   }
+}
+
+NewRoomForm.propTypes = {
+  createRoom: PropTypes.func.isRequired
 }
 
 export default NewRoomForm;

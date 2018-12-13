@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
 import Message from './Message';
 
 class MessageList extends Component {
@@ -37,6 +38,11 @@ class MessageList extends Component {
       </div>
     )
   }
+}
+
+MessageList.propTypes = {
+  messages: PropTypes.array.isRequired,
+  roomId: PropTypes.number
 }
 
 
